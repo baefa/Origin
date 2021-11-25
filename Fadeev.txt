@@ -1,4 +1,4 @@
-My first change Fadeev
+My first change Fadeev My second change Fadeev
 Private Sub CommandButton1_Click()
 i = 6
 Do While Worksheets("Накладная").Cells(i, 1).Value <> ""
