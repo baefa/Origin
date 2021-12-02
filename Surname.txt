@@ -1,0 +1,18 @@
+
+Private Sub CommandButton1_Click()
+i = 7
+Do While Worksheets("Íàêëàäíàÿ").Cells(i, 1).Value <> ""
+summ = summ + Worksheets("Íàêëàäíàÿ").Cells(i, 5).Value
+i = i + 1
+Loop
+Cells(i, 5) = summ
+If summ >= 1000000 Then sk = summ * 0.1
+If summ >= 100000 Then sk = summ * 0.5
+If summ >= 10000 Then sk = summ * 0.1
+Cells(i, 6) = sk
+pl = summ - sk
+Cells(i, 7) = pl
+Cells(i, 1) = "Èòîãîâàÿ ñòîèìîñòü"
+
+
+End Sub
