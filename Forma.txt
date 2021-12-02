@@ -1,0 +1,8 @@
+
+Private Sub CommandButton2_Click()
+ComboBox1.Text = ""
+ComboBox2.Text = ""
+ComboBox3.Text = "
+ComboBox4.Text = ""
+TextBox1.Text = ""
+End Sub
